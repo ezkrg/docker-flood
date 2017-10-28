@@ -27,7 +27,7 @@ RUN addgroup -S flood \
  && cp config.docker.js config.js \
  && chown -R flood: /var/lib/flood \
  && mkdir /data \
- && chown -R flood: /data
+ && chown -R flood: /data \
  && rm -rf /tmp/* \
  && apk del .build-deps
 
